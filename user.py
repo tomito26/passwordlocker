@@ -3,7 +3,7 @@ class User:
     Class that generates instances of the user
     '''
     save_userlist = []
-    def __init__(self,fname,lname,email):
+    def __init__(self,fname,lname,email,):
         
         self.fname = fname
         self.lname = lname

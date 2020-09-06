@@ -5,10 +5,14 @@ class Info:
     '''
     info_list = []
     
-    def __init__ (self,facebookp,emailp):
+    def __init__ (self,facebookp,emailp,instagrampas,twitterpas,facebookusername,twitusername,instagramusername):
       self.facebookp = facebookp
       self.emailp = emailp
-    
+      self.instagramp = instagrampas
+      self.twitterp = twitterpas
+      self.twitusername = twitusername
+      self.facebookusername = facebookusername
+      self.instagramusername = instagramusername
     def save_info(self):
         '''
         method created to save credentials

@@ -7,8 +7,8 @@ def created_account(fname,lname,email):
    new_user = User(fname,lname,email)
    return new_user
 
-def create_credentials(facebookp,emailp):
-    new_cred = Info(facebookp,emailp)
+def create_credentials(facebookp,emailp,instagrampas,twitterpas,facebookusername,instagramusername,twitusername):
+    new_cred = Info(facebookp,emailp,instagrampas,twitterpas,facebookusername,twitusername,instagramusername)
     return new_cred
 def save_account(user):
     user.save_user()
@@ -57,18 +57,36 @@ def main():
             print('Enter your email address')
             email = input()
             print('')
-            
-            print('Enter facebook password ')
-            facebookp = input()
-            print('')
-            
             print('Enter your email password?')
             emailp = input()
             print('')
             
+            print('Enter facebook Username')
+            facebookusername = input()
+            print('')
+            print('Enter facebook password ')
+            facebookp = input()
+            print('')
+            
+            
+            
+            print('Enter your twitter username?')
+            twitusername = input()
+            print('')
+            print('Enter twitter password')
+            twitterpas =input()
+            print('')
+             
+            print('Enter Instagram username ')
+            instagramusername = input()
+            print('')
+            print('Enter Instagram password ')
+            instagrampas = input()
+            print('')
+            
             save_account(created_account(fname,lname,email))
             print('\n')
-            save_credentials(create_credentials(facebookp,emailp))
+            save_credentials(create_credentials(facebookp,emailp,instagrampas,twitterpas,facebookusername,twitusername,instagramusername))
             print('-' * 50)
             
             print(f'New Account{fname}{lname} has been created')
@@ -85,7 +103,14 @@ def main():
                     print(f'{user.fname}{user.lname}')
                     
                 for credentials in display_creds():
-                    print(f'{facebookp}')
+                    print(f'''facebookusername {facebookusername}
+                          facebook password:  {facebookp}
+                          Twitter username :  {twitusername}
+                          twitter password:  {twitterpas }
+                          instagram username: {instagramusername}
+                          instagram password: { instagrampas }
+                          
+                          ''')
                     print('')
             
             
