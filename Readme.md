@@ -1,7 +1,14 @@
 # Password Locker 
 This is a terminal application that allows the user to create and save their credentials and also generates passwords for them.
 
+## BDD(Behavior Driven Development)
+Given : the user has access to this application
 
+Then: The user is able to create account using the shortcodes
+* cn -to create account
+* disp -to display the available credentials or passwords
+* ex - to exit the application
+* gs - to generate password
   
 ## Author 
 * Thomas Khaemba
