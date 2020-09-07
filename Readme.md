@@ -48,5 +48,6 @@ If you would like to collaborate fork the project and clone it by following the 
 ## Contacts and Support
 If you would like to ask questions,or need help or would like us to expand on the project feel free to reach out tommybwah@gmail.com
 
-
+## License and Copyright
+Licensed under [MIT license](license)
 
