@@ -36,6 +36,8 @@ def generatePassword(num):
 def main():
     
     while True:
+        print('')
+        print('')
         print('Welcome to password locker')
         print('\n')
         print('Select a short code to navigate through:to create new user use "cn": "disp" to display, "gs" to generate passwords or "ex" to exit')
