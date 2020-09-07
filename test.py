@@ -15,16 +15,16 @@ class TestUser(unittest.TestCase):
         self.new_user.save_user()
         
         
-    def tearDown(self):
-        User.save_userlist = []
+#     def tearDown(self):
+#         User.save_userlist = []
     
-    def test_delete_user(self):
-        self.new_user.save_user()
-        test_data = User('tomito','jarvis','tomitojarvis@gmail.com')
-        test_data.save_user()
-        self.assertEqual(len(User.save_userlist),2)
+#     def test_delete_user(self):
+#         self.new_user.save_user()
+#         test_data = User('tomito','jarvis','tomitojarvis@gmail.com')
+#         test_data.save_user()
+#         self.assertEqual(len(User.save_userlist),2)
     
-    def test_display_user(self):
-        self.assertEqual(User.display_users(),User.save_userlist)
-if __name__ == '__main__':
-    unittest.main()
+#     def test_display_user(self):
+#         self.assertEqual(User.display_users(),User.save_userlist)
+# if __name__ == '__main__':
+#     unittest.main()
