@@ -103,7 +103,8 @@ def main():
                     print(f'{user.fname}{user.lname}')
                     
                 for credentials in display_creds():
-                    print(f'''facebookusername {facebookusername}
+                    print(f'''
+                          facebookusername {facebookusername}
                           facebook password:  {facebookp}
                           Twitter username :  {twitusername}
                           twitter password:  {twitterpas }
