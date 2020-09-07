@@ -40,7 +40,12 @@ def main():
         print('')
         print('Welcome to password locker')
         print('\n')
-        print('Select a short code to navigate through:to create new user use "cn": "disp" to display, "gs" to generate passwords or "ex" to exit')
+        print('''
+              Select a short code to navigate through:
+              'cn' to create a new account: 
+              "disp" to display credentials
+              "gs" to generate passwords 
+              "ex" to exit''')
         short_code = input().lower()
         print('\n')
         
